@@ -1,11 +1,14 @@
+/* Container - parte principal do projeto */
 .container{
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+/* Cor dos Titulos h2 da class = menu */
 #m-title{
     color: red;
 }
+/* Menu */
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -17,8 +20,22 @@
     background-color: #000000;
 }
 
+/* Painel de interacao */
 .panel{
     margin-top: 1rem;
     display: flex;
-    border: 1px solid #ff0000;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    border: 2px solid #ff0000;
+}
+.panel-row .square{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000000;
+    background-color: #90ee90;
+}
+
+.panel-row .enemy {
+    background-color: red;
 }
