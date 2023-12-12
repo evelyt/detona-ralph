@@ -3,11 +3,20 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-image: url('../imagens/wall.png');
 }
 /* Cor dos Titulos h2 da class = menu */
 #m-title{
     color: red;
 }
+
+/* Configurações reaplicaveis: */
+.menu-lives, .panel{
+    display: flex; /*Necessário ter essa propriedade para que as propriedade justify-content e align-itens funcionem de forma correta*/
+    align-items: center;
+    justify-content: center;
+}
+
 /* Menu */
 .menu{
     display: flex;
@@ -18,24 +27,20 @@
     width: 100%;
     color: #ffffff;
     background-color: #000000;
+    border-bottom: 5px solid #ffd700;
 }
-
 /* Painel de interacao */
 .panel{
     margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 450px;
-    border: 2px solid #ff0000;
 }
 .panel-row .square{
     width: 150px;
     height: 150px;
     border: 1px solid #000000;
-    background-color: #90ee90;
+    background-color: #69e669;
 }
 
 .panel-row .enemy {
-    background-color: red;
+    background-image: url('../imagens/ralph.png');
+    background-size: cover;
 }
