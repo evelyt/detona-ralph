@@ -29,6 +29,11 @@
     background-color: #000000;
     border-bottom: 5px solid #ffd700;
 }
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2){
+    margin-top: 1rem;
+}
 /* Painel de interacao */
 .panel{
     margin-top: 1rem;
