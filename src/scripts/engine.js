@@ -13,7 +13,7 @@ const state =
         // gameVelocity: 1000,
         hitPosition: 0,
         result: 0,
-        currentTime: 61,
+        currentTime: 60,
         lives: 5,
     },
     actions: {
@@ -75,6 +75,7 @@ function addListenerHitBox() {
                 playSong("errou");
                 if (state.values.lives <= 0) {
                     state.values.lives = 0;
+                     state.view.live.textContent = state.values.lives;
                     alert("GAME OVER!!! \nVocê perdeu todas as suas vidas :(\n"
                         + "O seu SCORE foi: " + state.values.result);
                     location.reload();
