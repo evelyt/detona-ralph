@@ -5,7 +5,7 @@
     <!-- settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./src/imagens/favicon.jpg">
+    <link rel="icon" href="./src/images/favicon.jpg">
     <title>Detona Ralph</title>
 
     <!-- fonts -->
@@ -24,15 +24,16 @@
         <div class="menu">
             <div class="menu-time">
                 <h2 id="m-title">Time Left</h2>
-                <h2>0</h2>
+                <h2 id="time-left">0</h2>
             </div>
             <div class="menu-score">
                 <h2 id="m-title">Your Score</h2>
-                <h2>0</h2>
+                <h2 id="score">0</h2>
             </div>
             <div class="menu-lives">
-                <img src="./src/imagens/player.png" alt="foto do jogador" height="50px">
-                <h2>x3</h2>
+                <img src="./src/images/heart.png" alt="foto do jogador" height="50px">
+                <h2>x</h2>
+                <h2 id="lives">5</h2>
             </div>
         </div>
 
@@ -54,8 +55,7 @@
                 <div class="square" id="8"></div>
                 <div class="square" id="9"></div>
             </div>
-        </div>
-
+        </div> 
     </div>
 
     <script defer src="./src/scripts/engine.js"></script>
