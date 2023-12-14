@@ -73,7 +73,7 @@ function addListenerHitBox() {
                 state.view.live.textContent = state.values.lives;
                 state.values.hitPosition = null;
                 playSong("errou");
-                if (state.values.lives == 0) {
+                if (state.values.lives < 0) {
                     alert("GAME OVER!!! \nVocê perdeu todas as suas vidas :(\n"
                         + "O seu SCORE foi: " + state.values.result);
                     location.reload();
